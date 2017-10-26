@@ -42,6 +42,9 @@ import static android.Manifest.permission.READ_CONTACTS;
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
+    // 주소 설정
+    private final String address = "http://172.30.102.91:8090/signin";
+
     /**
      * Id to identity READ_CONTACTS permission request.
      */
@@ -350,7 +353,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             String json = new Gson().toJson(sign);
 
             // json 데이터로 보내고, json 데이터로 받는다.
-            String result = Remote.sendPost(json, "http://192.168.1.175:8090/signin");
+            String result = Remote.sendPost(json, address);
             // TODO: register the new account here.
             return result;
         }

@@ -47,41 +47,6 @@ public class Remote {
             }
         } catch (Exception e) {
             Log.e("Error", e.toString());
-            e.printStackTrace();
-        /*
-        } finally {
-
-            if (br != null) {
-                try {
-                    br.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            if (isr != null) {
-                try {
-                    isr.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if(bw != null){
-                try {
-                    bw.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-
-            if(osw != null){
-                try {
-                    osw.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            */
         }
         return result;
     }
